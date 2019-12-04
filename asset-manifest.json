@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/lotto/static/css/main.c0e85ba9.chunk.css",
+    "main.js": "/lotto/static/js/main.f65caf7f.chunk.js",
+    "main.js.map": "/lotto/static/js/main.f65caf7f.chunk.js.map",
+    "runtime-main.js": "/lotto/static/js/runtime-main.91c2af38.js",
+    "runtime-main.js.map": "/lotto/static/js/runtime-main.91c2af38.js.map",
+    "static/js/2.efb7ee6a.chunk.js": "/lotto/static/js/2.efb7ee6a.chunk.js",
+    "static/js/2.efb7ee6a.chunk.js.map": "/lotto/static/js/2.efb7ee6a.chunk.js.map",
+    "index.html": "/lotto/index.html",
+    "precache-manifest.dcbc99788564897a37cf89830305bd77.js": "/lotto/precache-manifest.dcbc99788564897a37cf89830305bd77.js",
+    "service-worker.js": "/lotto/service-worker.js",
+    "static/css/main.c0e85ba9.chunk.css.map": "/lotto/static/css/main.c0e85ba9.chunk.css.map",
+    "static/media/index.scss": "/lotto/static/media/DaxRegular.b100b6fb.ttf",
+    "static/media/logo-desktop.svg": "/lotto/static/media/logo-desktop.caa6c267.svg",
+    "static/media/logo-mobile.svg": "/lotto/static/media/logo-mobile.126371c4.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.91c2af38.js",
+    "static/js/2.efb7ee6a.chunk.js",
+    "static/css/main.c0e85ba9.chunk.css",
+    "static/js/main.f65caf7f.chunk.js"
+  ]
+}
