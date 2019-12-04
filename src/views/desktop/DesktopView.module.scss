@@ -1,0 +1,24 @@
+$footer-height: 95px;
+$header-height: 89px;
+
+.scrollWrapper {
+    width: 100%;
+    margin: $header-height auto $footer-height;
+    overflow: auto;
+}
+
+.scrollWrapper > footer, .scrollWrapper > header {
+    position: fixed;
+    width: 100%;
+    left: 0;
+}
+
+.scrollWrapper > header {
+    height: $header-height;
+    top: 0;
+}
+
+.scrollWrapper > footer {
+    height: $footer-height;
+    bottom: 0;
+}

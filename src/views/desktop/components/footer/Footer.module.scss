@@ -1,0 +1,18 @@
+@import '../../../../index.scss';
+
+.footer {
+    @include flex-center;
+    width: 100%;
+    background: $bg-white;
+    box-shadow: $box-shadow-footer;
+
+    &__button {
+        @include flex-center;
+        width: 302px;
+        height: 58px;
+        background-color: $bg-red;
+        box-shadow: $box-shadow-button-red-desktop;
+        color: $f-white;
+        animation: pulse .6s linear infinite alternate;
+    }
+}

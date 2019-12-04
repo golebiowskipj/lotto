@@ -1,26 +1,40 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {Component} from 'react';
+import { MobileView } from './views/mobile/MobileView';
+import { DesktopView } from './views/desktop/DesktopView';
+import throttle from 'lodash/throttle';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export class App extends Component {
+  state = {
+    isMobile: false,
+  }
+
+  componentDidMount() {
+    window.addEventListener('resize', this.handleResize); 
+    this.onResize();
+  }
+  
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.handleResize);
+  }
+  
+  handleResize = throttle(() => {
+    this.onResize();
+  }, 500)
+  
+  onResize = () => {
+    this.setState({isMobile: window.innerWidth < 767})
+    let vh = window.innerHeight * 0.01;
+
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+  }
+
+  render() {
+    return(
+      <>
+        {this.state.isMobile ? <MobileView /> : <DesktopView/>}
+      </>
+    );
+  }
 }
 
 export default App;

@@ -1,0 +1,12 @@
+@import '../../../../index.scss';
+
+.header {
+    @include flex-centerTop;
+    width: 100%;
+    background: $bg-white;
+    box-shadow: $box-shadow-header-mobile;
+
+    &__logo {
+        margin-top: 10px;
+    }
+}
