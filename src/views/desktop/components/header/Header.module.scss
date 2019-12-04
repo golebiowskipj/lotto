@@ -5,6 +5,7 @@
     width: 100%;
     background: $bg-white;
     box-shadow: $box-shadow-header-desktop;
+    z-index: 10;
 
     &__logo {
         margin-top: 10px;

@@ -4,7 +4,6 @@ $header-height: 89px;
 .scrollWrapper {
     width: 100%;
     margin: $header-height auto $footer-height;
-    overflow: auto;
 }
 
 .scrollWrapper > footer, .scrollWrapper > header {

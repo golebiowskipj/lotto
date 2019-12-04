@@ -3,7 +3,8 @@ $f-blue: #253f9a;
 $f-white: #ffffff;
 
 /*  */
-$bg: linear-gradient(270deg, #F8F8F8 0%, rgba(242, 242, 242, 0) 100%);
+$bg-linear-to-right: linear-gradient(270deg, #F8F8F8 0%, rgba(242, 242, 242, 0) 100%);
+$bg-linear-to-left: linear-gradient(270deg, rgba(242, 242, 242, 0) 0%, #F8F8F8 100%);
 $bg-white: #ffffff;
 $bg-red: #d94863;
 

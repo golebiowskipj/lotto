@@ -5,6 +5,7 @@
     width: 100%;
     background: $bg-white;
     box-shadow: $box-shadow-footer;
+    z-index: 10;
 
     &__button {
         @include flex-center;

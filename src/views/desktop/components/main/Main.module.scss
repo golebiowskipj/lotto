@@ -1,0 +1,19 @@
+@import '../../../../index.scss';
+
+.mainGrid {
+    display: grid;
+    grid-template-columns: 1fr 606px 1fr;
+}
+
+.gradient__toRight {
+    background: $bg-linear-to-right;
+}
+
+.gradient__toLeft {
+    background: $bg-linear-to-left;
+}
+
+.track {
+    background: $bg-white;
+    padding: 36px 32px;
+}
