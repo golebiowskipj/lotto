@@ -1,0 +1,10 @@
+.mobileGrid {
+    display: grid;
+    grid-template-columns: 91vw 9vw;
+    z-index: 1;
+    position: relative;
+}
+
+.screen {
+    z-index: 1;
+}

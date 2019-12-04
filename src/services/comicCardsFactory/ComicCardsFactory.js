@@ -139,8 +139,16 @@ const card6 = new ComicCardData(
     ]
 );
 
+const card1m = {...card1, height: 1.6*0.9 * window.innerWidth }
+const card2m = {...card2, height: 1.6*0.9 * window.innerWidth }
+const card3m = {...card3, height: 1.6*0.9 * window.innerWidth }
+const card4m = {...card4, height: 1.6*0.9 * window.innerWidth }
+const card5m = {...card5, height: 1.6*0.9 * window.innerWidth }
+const card6m = {...card6, height: 1.6*0.9 * window.innerWidth }
 
+// 90vw   h/w = 1.6
 export  const comicCards = [card1, card2, card3, card4, card5, card6];
+export const comicCardsm = [card1m, card2m, card3m, card4m, card5m, card6m];
 
 // Cheatsheet
 // ComicCard.propTypes = {

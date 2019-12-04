@@ -19,3 +19,6 @@ $box-shadow-button-red-mobile: 0px 4px 8px rgba(0, 0, 0, 0.25);
 $box-shadow-card: 0px 4px 4px rgba(0,0,0,.12);
 
 $border-radius: 12px;
+
+
+$calculated-height: calc(var(--vh, 1vh) * 100);

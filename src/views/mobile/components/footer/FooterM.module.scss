@@ -4,6 +4,7 @@
     @include flex-center;
     width: 100%;
     background: $bg-white;
+    z-index: 10;
 
     &__button {
         @include flex-center;

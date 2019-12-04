@@ -11,6 +11,7 @@ export class App extends Component {
   componentDidMount() {
     window.addEventListener('resize', this.handleResize); 
     this.onResize();
+    this.getWindowHeight();
   }
   
   componentWillUnmount() {
@@ -22,13 +23,19 @@ export class App extends Component {
   }, 500)
   
   onResize = () => {
-    this.setState({isMobile: window.innerWidth < 767})
+    this.setState({isMobile: window.innerWidth < 767}, this.getWindowHeight())
+   
+  }
+
+  getWindowHeight = () => {
     let vh = window.innerHeight * 0.01;
+    console.log(vh)
 
     document.documentElement.style.setProperty('--vh', `${vh}px`);
   }
 
   render() {
+    this.getWindowHeight();
     return(
       <>
         {this.state.isMobile ? <MobileView /> : <DesktopView/>}

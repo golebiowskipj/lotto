@@ -1,12 +1,13 @@
+    @import '../../index.scss';
+    
     $footer-height: 91px;
     $header-height: 49px;
-
-    $calculated-height: calc(var(--vh, 1vh) * 100);
 
     .heightWrapper {
         width: 100%;
         height: 100vh;
         height: $calculated-height;
+        overflow: hidden;
     }
 
     .heightWrapper > main {
