@@ -14,6 +14,7 @@ export const Main = () => {
             <div className={styles.gradient__toRight}></div>
             <section className={styles.track}>
                 <Card1 data={comicCards[0]} />
+                <Card1 data={comicCards[0]} />
                 <Card2 data={comicCards[1]} />
                 <Card3 data={comicCards[2]} />
                 <Card4 data={comicCards[3]} />

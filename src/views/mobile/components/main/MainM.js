@@ -8,12 +8,13 @@ import { Card3 } from '../comicCards/card3/Card3';
 import { Card4 } from '../comicCards/card4/Card4';
 import { Card5 } from '../comicCards/card5/Card5';
 import { Card6 } from '../comicCards/card6/Card6';
+import arrow from '../../images/arrow.svg';
 
 export class MainM extends Component {
     state = {
         x0: 0,
         stage: 1,
-        height: window.innerHidth - 49 - 91,
+        height: window.innerHeight,
     }
 
     touchStart = (e) => {
@@ -23,20 +24,25 @@ export class MainM extends Component {
         const x0 = this.state.x0;
         const x1 = e.changedTouches[0].screenX;
 
-        x0 > x1 ? this.nextStage() : this.prevStage();
+        const max = Math.max(x0, x1);
+        const min = Math.min(x0, x1);
+
+        if (max - min > 30) {
+            (x0 > x1) ? this.nextStage() : this.prevStage();
+        }
     }
 
     nextStage = () => {
-        if(this.state.stage < comicCardsm.length) this.setState({ stage: this.state.stage + 1 })        
+        if (this.state.stage < comicCardsm.length) this.setState({ stage: this.state.stage + 1 })
     }
 
     prevStage = () => {
-        if(this.state.stage > 1) this.setState({ stage: this.state.stage - 1 })
-      
+        if (this.state.stage > 1) this.setState({ stage: this.state.stage - 1 })
+
     }
 
     prevStageBtn = () => {
-        this.setState({stage: 1})
+        this.setState({ stage: 1 })
     }
 
     displayStage = (stage) => {
@@ -44,7 +50,7 @@ export class MainM extends Component {
             case 1:
                 return <Card1 height={this.state.height} data={comicCardsm[0]} />
             case 2:
-                return <Card2 height={this.state.height} data={comicCardsm[1]} />
+                return <Card1 height={this.state.height} data={comicCardsm[0]} />
             case 3:
                 return <Card3 height={this.state.height} data={comicCardsm[2]} />
             case 4:
@@ -55,28 +61,28 @@ export class MainM extends Component {
                 return <Card6 height={this.state.height} data={comicCardsm[5]} />
         }
     }
-    
+
     componentDidMount() {
-        window.addEventListener('resize', this.handleResize); 
+        window.addEventListener('resize', this.handleResize);
         this.onResize();
-      }
-      
-      componentWillUnmount() {
+    }
+
+    componentWillUnmount() {
         window.removeEventListener('resize', this.handleResize);
-      }
-      
-      handleResize = throttle(() => {
+    }
+
+    handleResize = throttle(() => {
         this.onResize();
-      }, 500)
-      
-      onResize = () => {
+    }, 500)
+
+    onResize = () => {
         let vh = window.innerHeight - 49 - 91;
-        this.setState({height: vh})
-      }
+        this.setState({ height: vh })
+    }
 
     render() {
         return (
-            <main className={this.state.stage < 6 ? styles.mobileGrid : styles.mobileGrid__last }>
+            <main className={this.state.stage < 6 ? styles.mobileGrid : styles.mobileGrid__last}>
                 {this.state.stage < 6
                     ?
                     <>
@@ -85,11 +91,19 @@ export class MainM extends Component {
                                 this.displayStage(this.state.stage)
                             }
                         </div>
-                        <div className={styles.nextButton}><button onClick={this.nextStage} type="button"></button></div>
+                        <div className={styles.nextButton}>
+                            <button onClick={this.nextStage} type="button">
+                                <img src={arrow} alt="następny" />
+                            </button>
+                        </div>
                     </>
                     :
                     <>
-                        <div className={styles.nextButton}><button onClick={this.prevStageBtn} type="button"></button></div>
+                        <div className={styles.nextButton}>
+                            <button onClick={this.prevStageBtn} type="button">
+                            <img style={{transform: 'rotate(180deg)'}} src={arrow} alt="na początek" />
+                            </button>
+                        </div>
                         <div className={styles.screen} onTouchStart={this.touchStart} onTouchEnd={this.touchEnd}>
                             {
                                 this.displayStage(this.state.stage)

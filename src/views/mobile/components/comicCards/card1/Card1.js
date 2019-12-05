@@ -1,5 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types';
+import Sensor from 'react-visibility-sensor';
+import Fade from 'react-reveal/Fade';
+import { slide, fade } from '../../../../../services/animationVariables/AnimationVariables';
 import styles from './Card1.module.scss';
 import '../CommonComicCardM.scss';
 import kierownik from '../../../images/kierownik.svg';
@@ -7,12 +10,15 @@ import marzycielka from '../../../images/marzycielka.svg';
 import zartownis from '../../../images/zartownis.svg';
 
 export const Card1 = (props) => {
+    console.log(props)
     return (
-        <div style={{ height: props.height }} className={`gradientBorder--mobile`}>
-            <div className={`card--mobile`}>
-                <img style={{maxHeight: props.height - 6}} src={props.data.background} alt="tło karty" />
+        <Fade duration={300} delay={100}>
+            <div style={{ height: props.height }} className={`gradientBorder--mobile`}>
+                <div className={`card--mobile`}>
+                    <img style={{ maxHeight: props.height - 6 }} src={props.data.background} alt="tło karty" />
+                </div>
             </div>
-        </div>
+        </Fade>
     )
 }
 

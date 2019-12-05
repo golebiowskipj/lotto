@@ -14,15 +14,27 @@
     .cloud_kierownik {
         width: 311px;
         height: 63px;
-        top: 0;
-        left: 0;
-        opacity: 0;
-        transform: translate(-95%, -50%);
-        transition: opacity .3s ease-out;
+        top: -30px;
+        left: -311px;
+
 
         .text_kierownik {
             max-width: 271px;
             top: 6px;
+            left: 10px;
+        }
+    }
+
+    .cloud_kierownik2 {
+
+        width: 220px;
+        height: 295px;
+        bottom: -310px;
+        right: 30px;
+
+        .text_kierownik {
+            max-width: 203px;
+            bottom: 6px;
             left: 10px;
         }
     }
@@ -31,13 +43,38 @@
 .zartownis {
     top: 322px;
     left: 48px;
-    transform: translateX(-500px);
-    transition: transform .3s ease-out;
+
+    .cloud_zartownis {
+        width: 172px;
+        height: 41px;
+        top: -30px;
+        right: -180px;
+
+
+        .text_zartownis {
+            max-width: 142px;
+            top: 7px;
+            left: 27px;
+        }
+    }
 }
 
 .marzycielka {
     top: 465px;
     right: 304px;
-    transform: translateX(500px);
-    transition: transform .3s ease-out;
+
+    .cloud_marzycielka {
+        width: 184px;
+        height: 62px;
+        top: -60px;
+        right: -160px;
+
+
+        .text_marzycielka {
+            max-width: 184px;
+            top: 6px;
+            left: 10px;
+            width: 100%;
+        }
+    }
 }

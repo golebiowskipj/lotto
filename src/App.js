@@ -25,7 +25,7 @@ export class App extends Component {
   
   onResize = () => {
     this.getWindowHeight()
-    this.setState({isMobile: window.innerWidth < 767})
+    this.setState({isMobile: window.innerWidth < 768})
   }
 
   getWindowHeight = () => {
