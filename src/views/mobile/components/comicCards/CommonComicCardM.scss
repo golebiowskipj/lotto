@@ -10,10 +10,12 @@
     padding: 3px;
     position: relative;
     overflow: hidden;
+    height: 100%;
 
     img {
-        object-fit: scale-down ;
+        object-fit: cover;
         border-radius: 11px;
         z-index: 1;
+        height: 100%;
     }
 }

@@ -1,3 +1,5 @@
+import throttle from 'lodash.throttle';
+
 import card1bg from './images/bgs/1/card1bg.jpg';
 import card2bg from './images/bgs/2/card2bg.jpg';
 import card3bg from './images/bgs/3/card3bg.jpg';
@@ -145,7 +147,11 @@ const card6 = new ComicCardData(
     ]
 );
 
-const card1m = {...card1, background: card1bgm, height: '100%'}
+
+const height = window.innerHeight - 49 - 91; 
+
+
+const card1m = {...card1, background: card1bgm, height: height}
 const card2m = {...card2, background: card2bgm, height: 523}
 const card3m = {...card3, background: card3bgm, height: 523}
 const card4m = {...card4, background: card4bgm, height: 523}

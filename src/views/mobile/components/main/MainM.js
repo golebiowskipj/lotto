@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import throttle from 'lodash.throttle';
 import { comicCardsm } from '../../../../services/comicCardsFactory/ComicCardsFactory';
 import styles from './MainM.module.scss';
 import { Card1 } from '../comicCards/card1/Card1';
@@ -12,6 +13,7 @@ export class MainM extends Component {
     state = {
         x0: 0,
         stage: 1,
+        height: window.innerWidth - 49 - 91,
     }
 
     touchStart = (e) => {
@@ -40,23 +42,40 @@ export class MainM extends Component {
     displayStage = (stage) => {
         switch (stage) {
             case 1:
-                return <Card1 data={comicCardsm[0]} />
+                return <Card1 height={this.state.height} data={comicCardsm[0]} />
             case 2:
-                return <Card2 data={comicCardsm[1]} />
+                return <Card2 height={this.state.height} data={comicCardsm[1]} />
             case 3:
-                return <Card3 data={comicCardsm[2]} />
+                return <Card3 height={this.state.height} data={comicCardsm[2]} />
             case 4:
-                return <Card4 data={comicCardsm[3]} />
+                return <Card4 height={this.state.height} data={comicCardsm[3]} />
             case 5:
-                return <Card5 data={comicCardsm[4]} />
+                return <Card5 height={this.state.height} data={comicCardsm[4]} />
             case 6:
-                return <Card6 data={comicCardsm[5]} />
+                return <Card6 height={this.state.height} data={comicCardsm[5]} />
         }
     }
+    componentDidMount() {
+        window.addEventListener('resize', this.handleResize); 
+        this.onResize();
+      }
+      
+      componentWillUnmount() {
+        window.removeEventListener('resize', this.handleResize);
+      }
+      
+      handleResize = throttle(() => {
+        this.onResize();
+      }, 500)
+      
+      onResize = () => {
+        let vh = window.innerHeight - 49 - 91;
+        this.setState({height: vh})
+      }
 
     render() {
         return (
-            <main className={styles.mobileGrid}>
+            <main className={this.state.stage < 6 ? styles.mobileGrid : styles.mobileGrid__last }>
                 {this.state.stage < 6
                     ?
                     <>
