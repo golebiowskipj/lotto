@@ -50,7 +50,7 @@ export class MainM extends Component {
             case 1:
                 return <Card1 height={this.state.height} data={comicCardsm[0]} />
             case 2:
-                return <Card1 height={this.state.height} data={comicCardsm[0]} />
+                return <Card1 height={this.state.height} data={comicCardsm[1]} />
             case 3:
                 return <Card3 height={this.state.height} data={comicCardsm[2]} />
             case 4:

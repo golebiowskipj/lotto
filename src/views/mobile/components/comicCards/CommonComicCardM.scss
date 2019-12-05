@@ -12,7 +12,7 @@
     overflow: hidden;
     height: 100%;
 
-    img {
+    &>img {
         object-fit: cover;
         border-radius: 11px;
         z-index: 1;
@@ -21,10 +21,31 @@
     }
 }
 
-.slideFromSide {
-    transform: none!important;
+.actor--mobile {
+    position: absolute;
+    z-index: 2;
 }
 
-.fadeIn {
-    opacity: 1!important;
+.actor__kierownik--mobile {
+    width: 65px;
+    height: 74px;
+}
+
+.actor__marzycielka--mobile {
+    width: 53px;
+    height: 72px;
+}
+
+.actor__zartownis--mobile {
+    width: 66px;
+    height: 72px;
+}
+
+.cloud--mobile {
+    position: absolute;
+}
+
+.text--mobile {
+    position: absolute;
+    text-align: center;
 }

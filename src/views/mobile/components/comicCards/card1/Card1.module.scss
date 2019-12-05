@@ -1,2 +1,84 @@
 @import '../../../../../index.scss';
 
+@import '../../../../../index.scss';
+
+
+.card {
+    overflow: hidden;
+}
+
+.kierownik {
+    bottom: 265px;
+    right: 29px;
+
+    .cloud_kierownik {
+        width: 205px;
+        height: 116px;
+        top: -116px;
+        left: -205px;
+
+
+
+        .text_kierownik {
+            max-width: 146px;
+            top: 5px;
+            left: 10px;
+        }
+    }
+
+    .cloud_kierownik2 {
+
+        width: 175px;
+        height: 188px;
+        bottom: -200px;
+        right: 30px;
+
+
+        .text_kierownik {
+            max-width: 135px;
+            bottom: 8px;
+            left: 8px;
+        }
+    }
+}
+
+.zartownis {
+    top: 205px;
+    left: 147px;
+
+    .cloud_zartownis {
+        width: 133px;
+        height: 41px;
+        top: -30px;
+        left: -133px;
+
+
+
+        .text_zartownis {
+            max-width: 109px;
+            top: 9px;
+            left: 10px;
+        }
+    }
+}
+
+.marzycielka {
+    bottom: 113px;
+    left: 27px;
+
+    .cloud_marzycielka {
+        width: 167px;
+        height: 40px;
+        top: -14px;
+        right: -167px;
+
+
+
+        .text_marzycielka {
+            max-width: 157px;
+            top: 9px;
+            left: 10px;
+            width: 100%;
+        }
+    }
+}

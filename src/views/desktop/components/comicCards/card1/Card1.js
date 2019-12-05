@@ -45,10 +45,10 @@ export class Card1 extends Component {
                                     </div>
                                 </Fade>
                                 <Fade when={this.state.isVisbile} delay={slide + fade + slide + fade + slide + fade + fade} duration={fade}>
-                                <div className={`cloud ${styles.cloud_kierownik2}`}>
-                                    <img src={cloud4} alt="dymek kierownika" />
-                                    <p className={`f-text--desktop text ${styles.text_kierownik}`}>Zarejestrujmy się i zakręćmy po kody promocyjne!</p>
-                                </div>
+                                    <div className={`cloud ${styles.cloud_kierownik2}`}>
+                                        <img src={cloud4} alt="dymek kierownika" />
+                                        <p className={`f-text--desktop text ${styles.text_kierownik}`}>Zarejestrujmy się i zakręćmy po kody promocyjne!</p>
+                                    </div>
                                 </Fade>
                             </div>
                         </Fade>
