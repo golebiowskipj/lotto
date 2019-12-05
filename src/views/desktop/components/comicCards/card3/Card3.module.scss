@@ -1,2 +1,56 @@
 @import '../../../../../index.scss';
 
+.card {
+    overflow: hidden;
+}
+
+.kierownik {
+    top: 169px;
+    right: 69px;
+
+    .cloud_kierownik {
+        width: 296px;
+        height: 64px;
+        top: -55px;
+        left: -285px;
+
+
+        .text_kierownik {
+            max-width: 257px;
+            top: 6px;
+            left: 10px;
+        }
+    }
+
+    .cloud_kierownik2 {
+        width: 292px;
+        height: 115px;
+        bottom: -120px;
+        right: 50px;
+
+        .text_kierownik {
+            max-width: 244px;
+            bottom: 6px;
+            left: 10px;
+        }
+    }
+}
+
+.zartownis {
+    top: 215px;
+    left: 191px;
+
+    .cloud_zartownis {
+        width: 173px;
+        height: 84px;
+        top: 30px;
+        right: 140px;
+
+
+        .text_zartownis {
+            max-width: 138px;
+            top: 7px;
+            left: 12px;
+        }
+    }
+}

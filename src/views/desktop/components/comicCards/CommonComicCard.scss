@@ -40,6 +40,11 @@
 
 .cloud {
     position: absolute;
+    opacity: 0;
+
+    img {
+        position: absolute;
+    }
 }
 
 .text {

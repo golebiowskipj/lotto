@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import PropTypes from 'prop-types';
 import styles from './Card1.module.scss';
 import '../CommonComicCard.scss';
 import Sensor from 'react-visibility-sensor';
@@ -19,23 +18,22 @@ import zartownis from '../../../images/zartownis.svg';
 export class Card1 extends Component {
     state = {
         isVisible: false,
-        isActive: true,
     }
 
     onChange = (isVisible) => {
-        this.setState({ isVisible, isActive: false });
+        this.setState({ isVisible: isVisible});
     }
     render() {
         return (
             <Sensor
-                active={this.state.isActive}
+                active={!this.state.isVisible}
                 onChange={this.onChange}
                 minTopValue={400}
                 resizeCheck={true}>
-                <div style={{ height: this.props.data.height }} className={`gradientBorder`}>
+                <div style={{ height: 671 }} className={`gradientBorder`}>
                     <div className={`card ${styles.card}`}>
-                        <img className={`card__background`} style={{ height: this.props.data.height - 6 }} src={bg} alt="tło karty" />
-                        <Fade right when={this.state.isVisible} duration={slide}>
+                        <img className={`card__background`} style={{ height: 671 - 6 }} src={bg} alt="tło karty" />
+                        <Fade right when={this.state.isVisible} duration={slide} appear={true}>
                             <div className={`actor actor__kierownik slideFromSide ${styles.kierownik}`}>
                                 <img src={kierownik} alt="kierownik" />
                                 <Fade when={this.state.isVisbile} delay={slide} duration={fade}>
@@ -81,23 +79,4 @@ export class Card1 extends Component {
     }
 }
 
-Card1.propTypes = {
-    data: PropTypes.shape(
-        {
-            stage: PropTypes.number.isRequired,
-            height: PropTypes.number.isRequired,
-            background: PropTypes.string.isRequired,
-            actors: PropTypes.arrayOf(PropTypes.shape({
-                id: PropTypes.number.isRequired,
-                name: PropTypes.string.isRequired
-            })),
-            dialogues: PropTypes.arrayOf(PropTypes.shape({
-                id: PropTypes.number.isRequired,
-                actorId: PropTypes.number.isRequired,
-                cloudImg: PropTypes.string.isRequired,
-                cloudText: PropTypes.string.isRequired
-            }))
-        }
-    )
-}
 

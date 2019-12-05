@@ -21,20 +21,20 @@ export class Card1 extends Component {
     }
     render() {
         return (
-            <Fade duration={100} delay={100}>
+            <Fade duration={300} delay={300}>
                 <div style={{ height: this.props.height }} className={`gradientBorder--mobile`}>
                     <div className={`card--mobile`}>
                         <img style={{ maxHeight: this.props.height - 6 }} src={bg} alt="tło karty" />
-                        <Fade right duration={slide}>
+                        <Fade right delay={600} duration={slide}>
                             <div className={`actor--mobile actor__kierownik--mobile ${styles.kierownik}`}>
                                 <img src={kierownik} alt="kierownik" />
-                                <Fade  delay={slide} duration={fade}>
+                                <Fade  delay={600 + slide} duration={fade}>
                                     <div className={`cloud--mobile ${styles.cloud_kierownik}`}>
                                         <img src={cloud1} alt="dymek kierownika" />
                                         <p className={`f-text--mobile text--mobile ${styles.text_kierownik}`}>Za chwilę wejdziemy do świata kul… kultowych gier LOTTO.</p>
                                     </div>
                                 </Fade>
-                                <Fade  delay={slide + fade + slide + fade + slide + fade + fade} duration={fade}>
+                                <Fade  delay={600 + slide + fade + slide + fade + slide + fade + fade} duration={fade}>
                                     <div className={`cloud--mobile ${styles.cloud_kierownik2}`}>
                                         <img src={cloud4} alt="dymek kierownika" />
                                         <p className={`f-text--mobile text--mobile ${styles.text_kierownik}`}>Zarejestrujmy się i zakręćmy po kody promocyjne!</p>
@@ -42,7 +42,7 @@ export class Card1 extends Component {
                                 </Fade>
                             </div>
                         </Fade>
-                        <Fade left  delay={slide + fade} duration={slide}>
+                        <Fade left  delay={600 + slide + fade} duration={slide}>
                             <div className={`actor--mobile actor__zartownis--mobile ${styles.zartownis}`}>
                                 <img className={``} src={zartownis} alt="zartownis" />
                                 <Fade  delay={slide + fade + slide} duration={fade}>
@@ -53,10 +53,10 @@ export class Card1 extends Component {
                                 </Fade>
                             </div>
                         </Fade>
-                        <Fade right  delay={slide + fade + slide + fade} duration={slide}>
+                        <Fade right  delay={600 + slide + fade + slide + fade} duration={slide}>
                             <div className={`actor--mobile actor__marzycielka--mobile ${styles.marzycielka}`}>
                                 <img className={``} src={marzycielka} alt="marzycielka" />
-                                <Fade  delay={slide + fade + slide + fade + slide} duration={fade}>
+                                <Fade  delay={600 + slide + fade + slide + fade + slide} duration={fade}>
                                     <div className={`cloud--mobile ${styles.cloud_marzycielka}`}>
                                         <img src={cloud3} alt="dymek marzycielki" />
                                         <p className={`f-text--mobile text--mobile ${styles.text_marzycielka}`}>A mnie rozmarza…</p>

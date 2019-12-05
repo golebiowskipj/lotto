@@ -50,15 +50,15 @@ export class MainM extends Component {
             case 1:
                 return <Card1 height={this.state.height} data={comicCardsm[0]} />
             case 2:
-                return <Card1 height={this.state.height} data={comicCardsm[1]} />
+                return <Card2 height={this.state.height} data={comicCardsm[0]} />
             case 3:
-                return <Card3 height={this.state.height} data={comicCardsm[2]} />
+                return <Card3 height={this.state.height} data={comicCardsm[0]} />
             case 4:
-                return <Card4 height={this.state.height} data={comicCardsm[3]} />
+                return <Card4 height={this.state.height} data={comicCardsm[0]} />
             case 5:
-                return <Card5 height={this.state.height} data={comicCardsm[4]} />
+                return <Card5 height={this.state.height} data={comicCardsm[0]} />
             case 6:
-                return <Card6 height={this.state.height} data={comicCardsm[5]} />
+                return <Card6 height={this.state.height} data={comicCardsm[0]} />
         }
     }
 
