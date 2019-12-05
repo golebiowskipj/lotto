@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/lotto/static/css/main.c71df422.chunk.css",
-    "main.js": "/lotto/static/js/main.1c603997.chunk.js",
-    "main.js.map": "/lotto/static/js/main.1c603997.chunk.js.map",
+    "main.css": "/lotto/static/css/main.2bc971a0.chunk.css",
+    "main.js": "/lotto/static/js/main.2452b36b.chunk.js",
+    "main.js.map": "/lotto/static/js/main.2452b36b.chunk.js.map",
     "runtime-main.js": "/lotto/static/js/runtime-main.91c2af38.js",
     "runtime-main.js.map": "/lotto/static/js/runtime-main.91c2af38.js.map",
-    "static/js/2.86196dec.chunk.js": "/lotto/static/js/2.86196dec.chunk.js",
-    "static/js/2.86196dec.chunk.js.map": "/lotto/static/js/2.86196dec.chunk.js.map",
+    "static/js/2.ce10acc8.chunk.js": "/lotto/static/js/2.ce10acc8.chunk.js",
+    "static/js/2.ce10acc8.chunk.js.map": "/lotto/static/js/2.ce10acc8.chunk.js.map",
     "index.html": "/lotto/index.html",
-    "precache-manifest.5c6b3dc70eed215240d336b576c634cf.js": "/lotto/precache-manifest.5c6b3dc70eed215240d336b576c634cf.js",
+    "precache-manifest.2557fa7151ca8e6b63d6ba94f4d66e92.js": "/lotto/precache-manifest.2557fa7151ca8e6b63d6ba94f4d66e92.js",
     "service-worker.js": "/lotto/service-worker.js",
-    "static/css/main.c71df422.chunk.css.map": "/lotto/static/css/main.c71df422.chunk.css.map",
+    "static/css/main.2bc971a0.chunk.css.map": "/lotto/static/css/main.2bc971a0.chunk.css.map",
     "static/media/Card6.module.scss": "/lotto/static/media/DaxRegular.b100b6fb.ttf",
+    "static/media/arrow.svg": "/lotto/static/media/arrow.3aaf5814.svg",
     "static/media/card1bg.jpg": "/lotto/static/media/card1bg.ca2a980d.jpg",
     "static/media/card1bgm.jpg": "/lotto/static/media/card1bgm.ebdd776b.jpg",
     "static/media/card1cloud1.svg": "/lotto/static/media/card1cloud1.28f701e8.svg",
@@ -43,13 +44,16 @@
     "static/media/card6cloud1.svg": "/lotto/static/media/card6cloud1.4c3b7515.svg",
     "static/media/card6cloud2.svg": "/lotto/static/media/card6cloud2.337f8971.svg",
     "static/media/card6cloud3.svg": "/lotto/static/media/card6cloud3.e763efd3.svg",
+    "static/media/kierownik.svg": "/lotto/static/media/kierownik.a8bdf014.svg",
     "static/media/logo-desktop.svg": "/lotto/static/media/logo-desktop.caa6c267.svg",
-    "static/media/logo-mobile.svg": "/lotto/static/media/logo-mobile.126371c4.svg"
+    "static/media/logo-mobile.svg": "/lotto/static/media/logo-mobile.126371c4.svg",
+    "static/media/marzycielka.svg": "/lotto/static/media/marzycielka.8191cc79.svg",
+    "static/media/zartownis.svg": "/lotto/static/media/zartownis.f7e1e0e6.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.91c2af38.js",
-    "static/js/2.86196dec.chunk.js",
-    "static/css/main.c71df422.chunk.css",
-    "static/js/main.1c603997.chunk.js"
+    "static/js/2.ce10acc8.chunk.js",
+    "static/css/main.2bc971a0.chunk.css",
+    "static/js/main.2452b36b.chunk.js"
   ]
 }

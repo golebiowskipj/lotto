@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e5af032d52a71ac6adbc1f52732a3ece",
+    "revision": "b718a9ae1386a1efa472f7ea4561f59e",
     "url": "/lotto/index.html"
   },
   {
-    "revision": "40456a720737eccd1f87",
-    "url": "/lotto/static/css/main.c71df422.chunk.css"
+    "revision": "256ca4d90ddcc21c4fd0",
+    "url": "/lotto/static/css/main.2bc971a0.chunk.css"
   },
   {
-    "revision": "9d11b283eec9609b4d55",
-    "url": "/lotto/static/js/2.86196dec.chunk.js"
+    "revision": "55c0550196b43778e626",
+    "url": "/lotto/static/js/2.ce10acc8.chunk.js"
   },
   {
-    "revision": "40456a720737eccd1f87",
-    "url": "/lotto/static/js/main.1c603997.chunk.js"
+    "revision": "256ca4d90ddcc21c4fd0",
+    "url": "/lotto/static/js/main.2452b36b.chunk.js"
   },
   {
     "revision": "a46015652e4e4d53abbe",
@@ -26,6 +26,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "b100b6fb1916257b75f8ec537bcdbece",
     "url": "/lotto/static/media/DaxRegular.b100b6fb.ttf"
+  },
+  {
+    "revision": "3aaf58148a5544e02a331fc782c2a4fc",
+    "url": "/lotto/static/media/arrow.3aaf5814.svg"
   },
   {
     "revision": "ca2a980d9eaf1c7801578c1b214c1b18",
@@ -152,11 +156,35 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/lotto/static/media/card6cloud3.e763efd3.svg"
   },
   {
+    "revision": "1832f7e3cd2fe3d1e12fda0e32c013c2",
+    "url": "/lotto/static/media/kierownik.1832f7e3.svg"
+  },
+  {
+    "revision": "a8bdf014585330b0b1cf6210ac709fea",
+    "url": "/lotto/static/media/kierownik.a8bdf014.svg"
+  },
+  {
     "revision": "caa6c267977c8452aeaaeb0c073ed59f",
     "url": "/lotto/static/media/logo-desktop.caa6c267.svg"
   },
   {
     "revision": "126371c4672749bba7e0f3a18729e2c6",
     "url": "/lotto/static/media/logo-mobile.126371c4.svg"
+  },
+  {
+    "revision": "3e04d99adf57827485c2ddddb48ef421",
+    "url": "/lotto/static/media/marzycielka.3e04d99a.svg"
+  },
+  {
+    "revision": "8191cc79c83fa846c65fc1bdddb1faeb",
+    "url": "/lotto/static/media/marzycielka.8191cc79.svg"
+  },
+  {
+    "revision": "852f13679e7c3546c5a73d8f033e9376",
+    "url": "/lotto/static/media/zartownis.852f1367.svg"
+  },
+  {
+    "revision": "f7e1e0e671ae215d8f7ae9693af2f5ab",
+    "url": "/lotto/static/media/zartownis.f7e1e0e6.svg"
   }
 ]);
