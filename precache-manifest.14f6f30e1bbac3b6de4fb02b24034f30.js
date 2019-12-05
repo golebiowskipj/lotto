@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "628452fa5d712095577395b02f408b08",
+    "revision": "0c4ce72488c310c746e90a67844018e2",
     "url": "/lotto/index.html"
   },
   {
-    "revision": "5a5d01bcb47f9abf9436",
-    "url": "/lotto/static/css/main.74eacf55.chunk.css"
+    "revision": "7980cf039099ae6bc6b3",
+    "url": "/lotto/static/css/main.787e83f8.chunk.css"
   },
   {
-    "revision": "d986ec24ed98ee58442f",
-    "url": "/lotto/static/js/2.1a94a8a8.chunk.js"
+    "revision": "14a2e02fc3d8a118a357",
+    "url": "/lotto/static/js/2.f8b50781.chunk.js"
   },
   {
-    "revision": "5a5d01bcb47f9abf9436",
-    "url": "/lotto/static/js/main.09f63a0a.chunk.js"
+    "revision": "7980cf039099ae6bc6b3",
+    "url": "/lotto/static/js/main.4a7bb043.chunk.js"
   },
   {
     "revision": "a46015652e4e4d53abbe",
@@ -30,6 +30,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "ca2a980d9eaf1c7801578c1b214c1b18",
     "url": "/lotto/static/media/card1bg.ca2a980d.jpg"
+  },
+  {
+    "revision": "ebdd776bf338107e3c06428a93d777b0",
+    "url": "/lotto/static/media/card1bgm.ebdd776b.jpg"
   },
   {
     "revision": "28f701e8164504450dc9f723fb423806",
@@ -52,6 +56,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/lotto/static/media/card2bg.2c69edc4.jpg"
   },
   {
+    "revision": "a78bc064f04e744f349780a2d5986711",
+    "url": "/lotto/static/media/card2bgm.a78bc064.jpg"
+  },
+  {
     "revision": "14ca49086bbf109150dace954c6b7568",
     "url": "/lotto/static/media/card2cloud1.14ca4908.svg"
   },
@@ -66,6 +74,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "e10bff9f4bd62990ce388c93c3270c26",
     "url": "/lotto/static/media/card3bg.e10bff9f.jpg"
+  },
+  {
+    "revision": "ab10360f03e08c39b01b646286d5eac9",
+    "url": "/lotto/static/media/card3bgm.ab10360f.jpg"
   },
   {
     "revision": "6cff20ee4b1d322c96ba70d17bb7a7df",
@@ -84,6 +96,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/lotto/static/media/card4bg.d9bd2fe6.jpg"
   },
   {
+    "revision": "8c09ff0c7fe905222549a6cc509fbe2c",
+    "url": "/lotto/static/media/card4bgm.8c09ff0c.jpg"
+  },
+  {
     "revision": "4f1491e2594901768f6889c9ea048e7d",
     "url": "/lotto/static/media/card4cloud1.4f1491e2.svg"
   },
@@ -100,6 +116,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/lotto/static/media/card5bg.abf487ad.jpg"
   },
   {
+    "revision": "db3b3d3c9cb4b449788d82218103b03f",
+    "url": "/lotto/static/media/card5bgm.db3b3d3c.jpg"
+  },
+  {
     "revision": "5886bb98192a27a722c18ffa647ec6a8",
     "url": "/lotto/static/media/card5cloud1.5886bb98.svg"
   },
@@ -114,6 +134,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "26e26951eccb08726e5cc37373ebfce2",
     "url": "/lotto/static/media/card6bg.26e26951.jpg"
+  },
+  {
+    "revision": "c1c24bc697d9c38b860b8a16614a6d64",
+    "url": "/lotto/static/media/card6bgm.c1c24bc6.jpg"
   },
   {
     "revision": "4c3b7515eae68a8cbc8f556ca3bf872b",
