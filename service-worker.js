@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/lotto/precache-manifest.dcbc99788564897a37cf89830305bd77.js"
+  "/lotto/precache-manifest.5649badcd5a769cae278f59d917166ff.js"
 );
 
 self.addEventListener('message', (event) => {
