@@ -2,6 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types';
 import styles from './Card1.module.scss';
 import '../CommonComicCardM.scss';
+import kierownik from '../../../images/kierownik.svg';
+import marzycielka from '../../../images/marzycielka.svg';
+import zartownis from '../../../images/zartownis.svg';
 
 export const Card1 = (props) => {
     return (

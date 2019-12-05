@@ -11,9 +11,39 @@
     position: relative;
     overflow: hidden;
 
-    img {
+    .card__background {
         object-fit: contain;
         border-radius: 11px;
         z-index: 1;
     }
+}
+
+.actor {
+    position: absolute;
+    z-index: 2;
+}
+
+.actor__kierownik {
+    width: 129px;
+    height: 148px;
+}
+
+.actor__marzycielka {
+    width: 109px;
+    height: 149px;
+}
+
+.actor__zartownis {
+    width: 139px;
+    height: 152px;
+}
+
+.cloud {
+    position: absolute;
+}
+
+.text {
+    position: absolute;
+    text-align: center;
+
 }

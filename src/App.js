@@ -6,6 +6,7 @@ import throttle from 'lodash/throttle';
 export class App extends Component {
   state = {
     isMobile: false,
+    height: '100vh',
   }
 
   componentDidMount() {

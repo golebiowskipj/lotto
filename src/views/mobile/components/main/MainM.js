@@ -13,7 +13,7 @@ export class MainM extends Component {
     state = {
         x0: 0,
         stage: 1,
-        height: window.innerWidth - 49 - 91,
+        height: window.innerHidth - 49 - 91,
     }
 
     touchStart = (e) => {
@@ -55,6 +55,7 @@ export class MainM extends Component {
                 return <Card6 height={this.state.height} data={comicCardsm[5]} />
         }
     }
+    
     componentDidMount() {
         window.addEventListener('resize', this.handleResize); 
         this.onResize();

@@ -1,2 +1,43 @@
 @import '../../../../../index.scss';
 
+
+.card {
+    overflow: hidden;
+}
+
+.kierownik {
+    top: 102px;
+    right: 14px;
+    transform: translateX(500px);
+    transition: transform .3s ease-out;
+
+    .cloud_kierownik {
+        width: 311px;
+        height: 63px;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transform: translate(-95%, -50%);
+        transition: opacity .3s ease-out;
+
+        .text_kierownik {
+            max-width: 271px;
+            top: 6px;
+            left: 10px;
+        }
+    }
+}
+
+.zartownis {
+    top: 322px;
+    left: 48px;
+    transform: translateX(-500px);
+    transition: transform .3s ease-out;
+}
+
+.marzycielka {
+    top: 465px;
+    right: 304px;
+    transform: translateX(500px);
+    transition: transform .3s ease-out;
+}
