@@ -5,8 +5,8 @@ import '../CommonComicCardM.scss';
 
 export const Card6 = (props) => {
     return (
-        <div style={{ height: props.data.height }} className={`gradientBorder`}>
-            <div className={`card`}>
+        <div style={{ height: props.data.height }} className={`gradientBorder--mobile`}>
+            <div className={`card--mobile`}>
                 <img style={{ height: props.data.height - 6 }} src={props.data.background} alt="tło karty" />
             </div>
         </div>

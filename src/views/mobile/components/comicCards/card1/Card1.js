@@ -5,9 +5,9 @@ import '../CommonComicCardM.scss';
 
 export const Card1 = (props) => {
     return (
-        <div style={{ height: props.data.height }} className={`gradientBorder`}>
-            <div className={`card`}>
-                <img style={{ height: props.data.height - 6 }} src={props.data.background} alt="tło karty" />
+        <div style={{ height: props.data.height }} className={`gradientBorder--mobile`}>
+            <div className={`card--mobile`}>
+                <img src={props.data.background} alt="tło karty" />
             </div>
         </div>
     )
@@ -17,7 +17,7 @@ Card1.propTypes = {
     data: PropTypes.shape(
         {
             stage: PropTypes.number.isRequired,
-            height: PropTypes.number.isRequired,
+            height: PropTypes.oneOfType([PropTypes.number.isRequired, PropTypes.string.isRequired]),
             background: PropTypes.string.isRequired,
             actors: PropTypes.arrayOf(PropTypes.shape({
                 id: PropTypes.number.isRequired,

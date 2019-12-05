@@ -11,21 +11,23 @@
     }
 
     .heightWrapper > main {
+        margin-top: 30px;
+        // padding-top: calc(#{$header-height} - 10px);
         height: calc(#{$calculated-height} - #{$header-height} - #{$footer-height});
     }
 
     .heightWrapper > footer, .scrollWrapper > header {
-        position: fixed;
-        left: 0;
+        // position: fixed;
+        // left: 0;
         width: 100%;
     }
 
     .heightWrapper > header {
         height: $header-height;
-        top: 0;
+        // top: 0;
     }
 
     .heightWrapper > footer {
         height: $footer-height;
-        bottom: 0;
+        // bottom: 0;
     }

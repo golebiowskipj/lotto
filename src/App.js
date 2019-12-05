@@ -23,14 +23,13 @@ export class App extends Component {
   }, 500)
   
   onResize = () => {
-    this.setState({isMobile: window.innerWidth < 767}, this.getWindowHeight())
+    this.getWindowHeight()
+    this.setState({isMobile: window.innerWidth < 767})
    
   }
 
   getWindowHeight = () => {
     let vh = window.innerHeight * 0.01;
-    console.log(vh)
-
     document.documentElement.style.setProperty('--vh', `${vh}px`);
   }
 

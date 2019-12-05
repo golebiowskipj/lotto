@@ -4,6 +4,12 @@ import card3bg from './images/bgs/3/card3bg.jpg';
 import card4bg from './images/bgs/4/card4bg.jpg';
 import card5bg from './images/bgs/5/card5bg.jpg';
 import card6bg from './images/bgs/6/card6bg.jpg';
+import card1bgm from './images/bgs/1/card1bgm.jpg';
+import card2bgm from './images/bgs/2/card2bgm.jpg';
+import card3bgm from './images/bgs/3/card3bgm.jpg';
+import card4bgm from './images/bgs/4/card4bgm.jpg';
+import card5bgm from './images/bgs/5/card5bgm.jpg';
+import card6bgm from './images/bgs/6/card6bgm.jpg';
 import card1cloud1 from './images/clouds/1/card1cloud1.svg';
 import card1cloud2 from './images/clouds/1/card1cloud2.svg';
 import card1cloud3 from './images/clouds/1/card1cloud3.svg';
@@ -139,12 +145,12 @@ const card6 = new ComicCardData(
     ]
 );
 
-const card1m = {...card1, height: 1.6*0.9 * window.innerWidth }
-const card2m = {...card2, height: 1.6*0.9 * window.innerWidth }
-const card3m = {...card3, height: 1.6*0.9 * window.innerWidth }
-const card4m = {...card4, height: 1.6*0.9 * window.innerWidth }
-const card5m = {...card5, height: 1.6*0.9 * window.innerWidth }
-const card6m = {...card6, height: 1.6*0.9 * window.innerWidth }
+const card1m = {...card1, background: card1bgm, height: '100%'}
+const card2m = {...card2, background: card2bgm, height: 523}
+const card3m = {...card3, background: card3bgm, height: 523}
+const card4m = {...card4, background: card4bgm, height: 523}
+const card5m = {...card5, background: card5bgm, height: 523}
+const card6m = {...card6, background: card6bgm, height: 523}
 
 // 90vw   h/w = 1.6
 export  const comicCards = [card1, card2, card3, card4, card5, card6];

@@ -1,13 +1,12 @@
 @import '../../../../index.scss';
 
-.gradientBorder {
+.gradientBorder--mobile {
     background: linear-gradient(180deg, #32C3E9 0%, #1468AD 100%);
     border-radius: 12px;
-    margin-bottom: 25px;
     z-index: 1;
 }
 
-.card {
+.card--mobile {
     padding: 3px;
     position: relative;
     overflow: hidden;
