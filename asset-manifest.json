@@ -1,24 +1,28 @@
 {
   "files": {
-    "main.css": "/lotto/static/css/main.2bc971a0.chunk.css",
-    "main.js": "/lotto/static/js/main.2452b36b.chunk.js",
-    "main.js.map": "/lotto/static/js/main.2452b36b.chunk.js.map",
+    "main.css": "/lotto/static/css/main.678a9b1c.chunk.css",
+    "main.js": "/lotto/static/js/main.368842b3.chunk.js",
+    "main.js.map": "/lotto/static/js/main.368842b3.chunk.js.map",
     "runtime-main.js": "/lotto/static/js/runtime-main.91c2af38.js",
     "runtime-main.js.map": "/lotto/static/js/runtime-main.91c2af38.js.map",
-    "static/js/2.ce10acc8.chunk.js": "/lotto/static/js/2.ce10acc8.chunk.js",
-    "static/js/2.ce10acc8.chunk.js.map": "/lotto/static/js/2.ce10acc8.chunk.js.map",
+    "static/js/2.7a3651d5.chunk.js": "/lotto/static/js/2.7a3651d5.chunk.js",
+    "static/js/2.7a3651d5.chunk.js.map": "/lotto/static/js/2.7a3651d5.chunk.js.map",
     "index.html": "/lotto/index.html",
-    "precache-manifest.2557fa7151ca8e6b63d6ba94f4d66e92.js": "/lotto/precache-manifest.2557fa7151ca8e6b63d6ba94f4d66e92.js",
+    "precache-manifest.94fc0a09ab8f65177bd601bd430c68b4.js": "/lotto/precache-manifest.94fc0a09ab8f65177bd601bd430c68b4.js",
     "service-worker.js": "/lotto/service-worker.js",
-    "static/css/main.2bc971a0.chunk.css.map": "/lotto/static/css/main.2bc971a0.chunk.css.map",
+    "static/css/main.678a9b1c.chunk.css.map": "/lotto/static/css/main.678a9b1c.chunk.css.map",
     "static/media/Card6.module.scss": "/lotto/static/media/DaxRegular.b100b6fb.ttf",
     "static/media/arrow.svg": "/lotto/static/media/arrow.3aaf5814.svg",
     "static/media/card1bg.jpg": "/lotto/static/media/card1bg.ca2a980d.jpg",
     "static/media/card1bgm.jpg": "/lotto/static/media/card1bgm.ebdd776b.jpg",
     "static/media/card1cloud1.svg": "/lotto/static/media/card1cloud1.28f701e8.svg",
+    "static/media/card1cloud1m.svg": "/lotto/static/media/card1cloud1m.5fdb3282.svg",
     "static/media/card1cloud2.svg": "/lotto/static/media/card1cloud2.f3bc7272.svg",
+    "static/media/card1cloud2m.svg": "/lotto/static/media/card1cloud2m.ac6e27b5.svg",
     "static/media/card1cloud3.svg": "/lotto/static/media/card1cloud3.612efced.svg",
+    "static/media/card1cloud3m.svg": "/lotto/static/media/card1cloud3m.b33cb2c9.svg",
     "static/media/card1cloud4.svg": "/lotto/static/media/card1cloud4.56f15805.svg",
+    "static/media/card1cloud4m.svg": "/lotto/static/media/card1cloud4m.61898628.svg",
     "static/media/card2bg.jpg": "/lotto/static/media/card2bg.2c69edc4.jpg",
     "static/media/card2bgm.jpg": "/lotto/static/media/card2bgm.a78bc064.jpg",
     "static/media/card2cloud1.svg": "/lotto/static/media/card2cloud1.14ca4908.svg",
@@ -52,8 +56,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.91c2af38.js",
-    "static/js/2.ce10acc8.chunk.js",
-    "static/css/main.2bc971a0.chunk.css",
-    "static/js/main.2452b36b.chunk.js"
+    "static/js/2.7a3651d5.chunk.js",
+    "static/css/main.678a9b1c.chunk.css",
+    "static/js/main.368842b3.chunk.js"
   ]
 }
