@@ -17,7 +17,7 @@ import zartownis from '../../../images/zartownis.svg';
 
 export class Card5 extends Component {
     state = {
-        isVisible: true,
+        isVisible: false,
     }
 
     onChange = (isVisible) => {
@@ -26,11 +26,11 @@ export class Card5 extends Component {
 
     render() {
         return (
-            // <Sensor
-            //     active={!this.state.isVisible}
-            //     onChange={this.onChange}
-            //     minTopValue={400}
-            //     resizeCheck={true}>
+            <Sensor
+                active={!this.state.isVisible}
+                onChange={this.onChange}
+                minTopValue={400}
+                resizeCheck={true}>
                 <div style={{ height: 640 }} className={`gradientBorder`}>
                     <div className={`card ${styles.card}`}>
                         <img className={`card__background`} style={{ height: 640 - 6 }} src={bg} alt="tło karty" />
@@ -75,7 +75,7 @@ export class Card5 extends Component {
                         </Fade>
                     </div>
                 </div>
-            // </Sensor>
+            </Sensor>
         )
     }
 }
