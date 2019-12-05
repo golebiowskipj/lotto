@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1161aba5523c8e7081a898f639cc888c",
+    "revision": "441950dd528e76966bf93b2c6367fe66",
     "url": "/lotto/index.html"
   },
   {
-    "revision": "cf918acd9178d0555861",
-    "url": "/lotto/static/css/main.678a9b1c.chunk.css"
+    "revision": "2d2d50d4b6ca5fe018ed",
+    "url": "/lotto/static/css/main.9a962897.chunk.css"
   },
   {
-    "revision": "4a4594186ef787358443",
-    "url": "/lotto/static/js/2.7a3651d5.chunk.js"
+    "revision": "054286dcfb6f11c3aea1",
+    "url": "/lotto/static/js/2.f8ce1652.chunk.js"
   },
   {
-    "revision": "cf918acd9178d0555861",
-    "url": "/lotto/static/js/main.7efb2673.chunk.js"
+    "revision": "2d2d50d4b6ca5fe018ed",
+    "url": "/lotto/static/js/main.2ebfb6cf.chunk.js"
   },
   {
     "revision": "a46015652e4e4d53abbe",
@@ -132,6 +132,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/lotto/static/media/card4cloud3.7cea29f6.svg"
   },
   {
+    "revision": "9adf2cc03d0782ae205f1c6bb586db69",
+    "url": "/lotto/static/media/card4cloud4.9adf2cc0.svg"
+  },
+  {
     "revision": "abf487adb925d5fb3abfb921544ae7d6",
     "url": "/lotto/static/media/card5bg.abf487ad.jpg"
   },
@@ -152,6 +156,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/lotto/static/media/card5cloud3.3da5f6dc.svg"
   },
   {
+    "revision": "258f0fa77ca67b88660db19c47a34fe6",
+    "url": "/lotto/static/media/card5cloud4.258f0fa7.svg"
+  },
+  {
     "revision": "26e26951eccb08726e5cc37373ebfce2",
     "url": "/lotto/static/media/card6bg.26e26951.jpg"
   },
@@ -170,6 +178,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "e763efd38cbe9146c66a6e952da6af85",
     "url": "/lotto/static/media/card6cloud3.e763efd3.svg"
+  },
+  {
+    "revision": "ab9607fccb3e6b6bb87031af65391ef9",
+    "url": "/lotto/static/media/card6cloud4.ab9607fc.svg"
   },
   {
     "revision": "1832f7e3cd2fe3d1e12fda0e32c013c2",
