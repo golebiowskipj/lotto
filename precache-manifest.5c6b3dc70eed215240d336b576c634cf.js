@@ -1,18 +1,18 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3337c9121fb50e0cae3572fe4f50ae9b",
+    "revision": "e5af032d52a71ac6adbc1f52732a3ece",
     "url": "/lotto/index.html"
   },
   {
-    "revision": "19305e9176af7d64cf25",
-    "url": "/lotto/static/css/main.7b6edea8.chunk.css"
+    "revision": "40456a720737eccd1f87",
+    "url": "/lotto/static/css/main.c71df422.chunk.css"
   },
   {
     "revision": "9d11b283eec9609b4d55",
     "url": "/lotto/static/js/2.86196dec.chunk.js"
   },
   {
-    "revision": "19305e9176af7d64cf25",
+    "revision": "40456a720737eccd1f87",
     "url": "/lotto/static/js/main.1c603997.chunk.js"
   },
   {
