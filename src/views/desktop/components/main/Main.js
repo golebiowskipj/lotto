@@ -1,6 +1,5 @@
 import React from 'react'
 import styles from './Main.module.scss';
-import { comicCards } from '../../../../services/comicCardsFactory/ComicCardsFactory';
 import { Card1 } from '../comicCards/card1/Card1';
 import { Card2 } from '../comicCards/card2/Card2';
 import { Card3 } from '../comicCards/card3/Card3';

@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types';
-import Fade from 'react-reveal/Fade';
-import { slide, fade } from '../../../../../services/animationVariables/AnimationVariables';
+
 import styles from './Card1.module.scss';
 import '../CommonComicCardM.scss';
 
@@ -21,52 +20,51 @@ export class Card1 extends Component {
     }
     render() {
         return (
-            <Fade duration={300} delay={300}>
-                <div style={{ height: this.props.height }} className={`gradientBorder--mobile`}>
-                    <div className={`card--mobile`}>
-                        <img style={{ maxHeight: this.props.height - 6 }} src={bg} alt="tło karty" />
-                        <Fade right delay={600} duration={slide}>
-                            <div className={`actor--mobile actor__kierownik--mobile ${styles.kierownik}`}>
-                                <img src={kierownik} alt="kierownik" />
-                                <Fade  delay={600 + slide} duration={fade}>
-                                    <div className={`cloud--mobile ${styles.cloud_kierownik}`}>
-                                        <img src={cloud1} alt="dymek kierownika" />
-                                        <p className={`f-text--mobile text--mobile ${styles.text_kierownik}`}>Za chwilę wejdziemy do świata kul… kultowych gier LOTTO.</p>
-                                    </div>
-                                </Fade>
-                                <Fade  delay={600 + slide + fade + slide + fade + slide + fade + fade} duration={fade}>
-                                    <div className={`cloud--mobile ${styles.cloud_kierownik2}`}>
-                                        <img src={cloud4} alt="dymek kierownika" />
-                                        <p className={`f-text--mobile text--mobile ${styles.text_kierownik}`}>Zarejestrujmy się i zakręćmy po kody promocyjne!</p>
-                                    </div>
-                                </Fade>
-                            </div>
-                        </Fade>
-                        <Fade left  delay={600 + slide + fade} duration={slide}>
-                            <div className={`actor--mobile actor__zartownis--mobile ${styles.zartownis}`}>
-                                <img className={``} src={zartownis} alt="zartownis" />
-                                <Fade  delay={slide + fade + slide} duration={fade}>
-                                    <div className={`cloud--mobile ${styles.cloud_zartownis}`}>
-                                        <img src={cloud2} alt="dymek zartownisia" />
-                                        <p className={`f-text--mobile text--mobile ${styles.text_zartownis}`}>I to mnie kręci!</p>
-                                    </div>
-                                </Fade>
-                            </div>
-                        </Fade>
-                        <Fade right  delay={600 + slide + fade + slide + fade} duration={slide}>
-                            <div className={`actor--mobile actor__marzycielka--mobile ${styles.marzycielka}`}>
-                                <img className={``} src={marzycielka} alt="marzycielka" />
-                                <Fade  delay={600 + slide + fade + slide + fade + slide} duration={fade}>
-                                    <div className={`cloud--mobile ${styles.cloud_marzycielka}`}>
-                                        <img src={cloud3} alt="dymek marzycielki" />
-                                        <p className={`f-text--mobile text--mobile ${styles.text_marzycielka}`}>A mnie rozmarza…</p>
-                                    </div>
-                                </Fade>
-                            </div>
-                        </Fade>
+
+            <div style={{ height: this.props.height }} className={`gradientBorder--mobile`}>
+                <div className={`card--mobile`}>
+                    <img style={{ maxHeight: this.props.height - 6 }} src={bg} alt="tło karty" />
+
+                    <div className={`actor--mobile actor__kierownik--mobile ${styles.kierownik}`}>
+                        <img src={kierownik} alt="kierownik" />
+
+                        <div className={`cloud--mobile ${styles.cloud_kierownik}`}>
+                            <img src={cloud1} alt="dymek kierownika" />
+                            <p className={`f-text--mobile text--mobile ${styles.text_kierownik}`}>Za chwilę wejdziemy do świata kul… kultowych gier LOTTO.</p>
+                        </div>
+
+
+                        <div className={`cloud--mobile ${styles.cloud_kierownik2}`}>
+                            <img src={cloud4} alt="dymek kierownika" />
+                            <p className={`f-text--mobile text--mobile ${styles.text_kierownik}`}>Zarejestrujmy się i zakręćmy po kody promocyjne!</p>
+                        </div>
+
                     </div>
+
+
+                    <div className={`actor--mobile actor__zartownis--mobile ${styles.zartownis}`}>
+                        <img className={``} src={zartownis} alt="zartownis" />
+
+                        <div className={`cloud--mobile ${styles.cloud_zartownis}`}>
+                            <img src={cloud2} alt="dymek zartownisia" />
+                            <p className={`f-text--mobile text--mobile ${styles.text_zartownis}`}>I to mnie kręci!</p>
+                        </div>
+
+                    </div>
+
+                    <div className={`actor--mobile actor__marzycielka--mobile ${styles.marzycielka}`}>
+                        <img className={``} src={marzycielka} alt="marzycielka" />
+
+                        <div className={`cloud--mobile ${styles.cloud_marzycielka}`}>
+                            <img src={cloud3} alt="dymek marzycielki" />
+                            <p className={`f-text--mobile text--mobile ${styles.text_marzycielka}`}>A mnie rozmarza…</p>
+                        </div>
+
+                    </div>
+
                 </div>
-            </Fade>
+            </div>
+
         )
     }
 
@@ -74,22 +72,5 @@ export class Card1 extends Component {
 
 Card1.propTypes = {
     height: PropTypes.number.isRequired,
-    data: PropTypes.shape(
-        {
-            stage: PropTypes.number.isRequired,
-            height: PropTypes.oneOfType([PropTypes.number.isRequired, PropTypes.string.isRequired]),
-            background: PropTypes.string.isRequired,
-            actors: PropTypes.arrayOf(PropTypes.shape({
-                id: PropTypes.number.isRequired,
-                name: PropTypes.string.isRequired
-            })),
-            dialogues: PropTypes.arrayOf(PropTypes.shape({
-                id: PropTypes.number.isRequired,
-                actorId: PropTypes.number.isRequired,
-                cloudImg: PropTypes.string.isRequired,
-                cloudText: PropTypes.string.isRequired
-            }))
-        }
-    )
 }
 
