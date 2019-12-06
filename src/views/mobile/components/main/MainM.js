@@ -12,7 +12,7 @@ import arrow from '../../images/arrow.svg';
 export class MainM extends Component {
     state = {
         x0: 0,
-        stage: 2,
+        stage: 3,
         height: window.innerHeight,
     }
 
