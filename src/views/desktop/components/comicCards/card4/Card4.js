@@ -49,7 +49,7 @@ export class Card4 extends Component {
                               
                                     <div className={`js-cloud cloud ${styles.cloud_kierownik}`}>
                                         <img src={cloud2} alt="dymek kierownika" />
-                                        <p className={`f-text--desktop text ${styles.text_kierownik}`}>Dokładnie tak &#128524;</p>
+                                        <p className={`f-text--desktop text ${styles.text_kierownik}`}>Dokładnie tak <span>&#128524;</span></p>
                                     </div>
                              
                                     <div className={`js-card4-cloud2 cloud ${styles.cloud_kierownik2}`}>
