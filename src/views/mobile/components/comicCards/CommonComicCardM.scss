@@ -23,7 +23,8 @@
 
 .actor--mobile {
     position: absolute;
-    z-index: 2;
+    z-index: 2;    
+    transition: transform .6s ease-out;
 }
 
 .actor__kierownik--mobile {
@@ -43,9 +44,16 @@
 
 .cloud--mobile {
     position: absolute;
+    opacity: 0;
+    transition: opacity .6s ease-out;
+
+    img {
+        position: absolute;
+    }
 }
 
 .text--mobile {
     position: absolute;
     text-align: center;
+    color: $f-blue;
 }
