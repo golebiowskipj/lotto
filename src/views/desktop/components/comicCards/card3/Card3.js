@@ -53,7 +53,7 @@ export class Card3 extends Component {
 
                             <div className={`js-cloud cloud ${styles.cloud_zartownis}`}>
                                 <img src={cloud2} alt="dymek zartownisia" />
-                                <p className={`f-text--desktop text ${styles.text_zartownis}`}>He, he, albo do tej PIN-up girl…</p>
+                                <p className={`f-text--desktop text ${styles.text_zartownis}`}>Nie no, w kulki sobie lecisz!</p>
                             </div>
 
                         </div>

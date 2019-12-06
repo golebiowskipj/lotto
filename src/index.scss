@@ -1,18 +1,21 @@
 @import './sass/modules/_variables';
 @import './sass/modules/_mixins';
-@font-face {
-  font-family: 'dax';
-  font-style: normal;
-  font-weight: 500;
-  src: url('./fonts/DaxRegular.ttf') format("opentype");
-}
+@import url("https://use.typekit.net/vup1dbo.css");
 
-@font-face {
-  font-family: 'dax-bold';
-  font-style: normal;
-  font-weight: bold;
-  src: url('./fonts/DaxBold.ttf') format("opentype");
-}
+
+// @font-face {
+//   font-family: 'dax';
+//   font-style: normal;
+//   font-weight: 500;
+//   src: url('./fonts/DaxRegular.ttf') format("opentype");
+// }
+
+// @font-face {
+//   font-family: 'dax-bold';
+//   font-style: normal;
+//   font-weight: bold;
+//   src: url('./fonts/DaxBold.ttf') format("opentype");
+// }
 
 
 *, *::before, *::after {
@@ -37,16 +40,20 @@ img {
 }
 
 .f-dax {
-  font-family: 'dax', 'Arial';
+  font-family: ff-dax-compact-pro, sans-serif;
+  font-weight: 600;
+  font-style: normal;
 }
 
 .f-dax--bold {
-  font-family: 'dax-bold', 'Arial';
+  font-family: ff-dax-compact-pro, sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 .f-text--desktop {
-  font-family: 'dax', 'Arial';
-  font-weight: 500;
+  @extend .f-dax;
+
   font-size: 19px;
   line-height: 24px;
   font-feature-settings: 'pnum' on, 'onum' on;
@@ -54,23 +61,22 @@ img {
 }
 
 .f-text--mobile {
-  font-family: 'dax', 'Arial';
-  font-weight: 500;
+  @extend .f-dax;
+
   font-size: 15px;
   line-height: 19px;
   font-feature-settings: 'pnum' on, 'onum' on;
 }
 
 .f-text-button--desktop {
-  font-family: 'dax-bold', 'Arial';
-  font-weight: bold;
+  @extend .f-dax--bold;
+
   font-size: 26px;
   line-height: 34px;
 }
 
 .f-text-button--mobile {
-  font-family: 'dax-bold', 'Arial';
-  font-weight: bold;
+  @extend .f-dax--bold;
   font-size: 22px;
   line-height: 28px;
 }
