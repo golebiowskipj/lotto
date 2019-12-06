@@ -8,6 +8,7 @@
 .kierownik {
     top: 311px;
     right: 371px;
+    transform: translateX(-500px);
 
     .cloud_kierownik {
         width: 200px;
@@ -60,6 +61,7 @@
 .marzycielka {
     top: 264px;
     right: 24px;
+    transform: translateX(500px);
 
     .cloud_marzycielka {
         width: 221px;

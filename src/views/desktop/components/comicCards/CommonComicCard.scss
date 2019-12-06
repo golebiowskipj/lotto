@@ -21,6 +21,7 @@
 .actor {
     position: absolute;
     z-index: 2;
+    transition: transform .6s ease-out;
 }
 
 .actor__kierownik {
@@ -41,6 +42,7 @@
 .cloud {
     position: absolute;
     opacity: 0;
+    transition: opacity .6s ease-out;
 
     img {
         position: absolute;

@@ -2,9 +2,7 @@ import React, { Component } from 'react'
 import styles from './Card2.module.scss';
 import '../CommonComicCard.scss';
 import Sensor from 'react-visibility-sensor';
-import Fade from 'react-reveal/Fade';
-import Slide from 'react-reveal/Fade';
-import { slide, fade } from '../../../../../services/animationVariables/AnimationVariables';
+import {showCloud} from '../../../../../services/animationService/AnimationService';
 
 import bg from "./images/card2bg.jpg"
 import cloud1 from "./images/card2cloud1.svg";
@@ -23,6 +21,19 @@ export class Card2 extends Component {
     onChange = (isVisible) => {
         this.setState({ isVisible: isVisible });
     }
+
+    // showCloud = (e, nextActorQuery) => {
+    //     const cloud = e.target.querySelector('.js-cloud');
+
+    //     if (cloud !== null) {
+    //         if (nextActorQuery !== '') {
+    //             cloud.addEventListener('transitionend', () => {
+    //                 document.querySelector(nextActorQuery).style.transform = 'none';
+    //             })
+    //         }
+    //         cloud.style.opacity = 1;
+    //     }
+    // }
     render() {
         return (
             <Sensor
@@ -30,43 +41,38 @@ export class Card2 extends Component {
                 onChange={this.onChange}
                 minTopValue={400}
                 resizeCheck={true}>
+
                 <div style={{ height: 671 }} className={`gradientBorder`}>
                     <div className={`card ${styles.card}`}>
+
                         <img className={`card__background`} style={{ height: 671 - 6 }} src={bg} alt="tło karty" />
-                        <Slide right when={this.state.isVisible} duration={slide}>
-                            <div className={`actor actor__kierownik ${styles.kierownik}`}>
-                                <img src={kierownik} alt="kierownik" />
-                                <Fade when={this.state.isVisible} delay={slide} duration={fade}>
-                                    <div className={`cloud ${styles.cloud_kierownik}`}>
-                                        <img src={cloud1} alt="dymek kierownika" />
-                                        <p className={`f-text--desktop text ${styles.text_kierownik}`}>Teraz zaangażujcie obie półkule mózgowe. Ustalcie hasło i sześciocyfrowy kod PIN.</p>
-                                    </div>
-                                </Fade>
+
+                        <div onTransitionEnd={(e) => showCloud(e, '.js-card2-actor2')} style={{ transform: this.state.isVisible ? 'none' : 'translateX(500px)' }} className={`actor actor__kierownik ${styles.kierownik}`}>
+                            <img src={kierownik} alt="kierownik" />
+                            <div className={`js-cloud cloud ${styles.cloud_kierownik}`}>
+                                <img src={cloud1} alt="dymek kierownika" />
+                                <p className={`f-text--desktop text ${styles.text_kierownik}`}>Teraz zaangażujcie obie półkule mózgowe. Ustalcie hasło i sześciocyfrowy kod PIN.</p>
                             </div>
-                        </Slide>
-                        <Fade left when={this.state.isVisible} delay={slide + fade} duration={slide}>
-                            <div className={`actor actor__marzycielka ${styles.marzycielka}`}>
-                                <img className={``} src={marzycielka} alt="marzycielka" />
-                                <Fade when={this.state.isVisbile} delay={slide + fade + slide} duration={fade}>
-                                    <div className={`cloud ${styles.cloud_marzycielka}`}>
-                                        <img src={cloud2} alt="dymek marzycielki" />
-                                        <p className={`f-text--desktop text ${styles.text_marzycielka}`}>PIN będzie potrzebny w kontakcie z Obsługą Klienta. Zapiszę go w bezpiecznym miejscu. Może znów dodzwonię się do tego miłego pana…</p>
-                                    </div>
-                                </Fade>
+                        </div>
+
+                        <div onTransitionEnd={(e) => showCloud(e, '.js-card2-actor3')} className={`js-card2-actor2 actor actor__marzycielka ${styles.marzycielka}`}>
+                            <img className={``} src={marzycielka} alt="marzycielka" />
+                            <div className={`js-cloud cloud ${styles.cloud_marzycielka}`}>
+                                <img src={cloud2} alt="dymek marzycielki" />
+                                <p className={`f-text--desktop text ${styles.text_marzycielka}`}>PIN będzie potrzebny w kontakcie z Obsługą Klienta. Zapiszę go w bezpiecznym miejscu. Może znów dodzwonię się do tego miłego pana…</p>
                             </div>
-                        </Fade>
-                        <Fade right when={this.state.isVisible} delay={slide + fade + slide + fade} duration={slide}>
-                            <div className={`actor actor__zartownis ${styles.zartownis}`}>
-                                <img className={``} src={zartownis} alt="zartownis" />
-                                <Fade when={this.state.isVisbile} delay={slide + fade + slide + fade + slide} duration={fade}>
-                                    <div className={`cloud ${styles.cloud_zartownis}`}>
-                                        <img src={cloud3} alt="dymek zartownisia" />
-                                        <p className={`f-text--desktop text ${styles.text_zartownis}`}>He, he, albo do tej PIN-up girl…</p>
-                                    </div>
-                                </Fade>
+                        </div>
+
+                        <div onTransitionEnd={(e) => showCloud(e, '')} className={`js-card2-actor3 actor actor__zartownis ${styles.zartownis}`}>
+                            <img className={``} src={zartownis} alt="zartownis" />
+                            <div className={`js-cloud cloud ${styles.cloud_zartownis}`}>
+                                <img src={cloud3} alt="dymek zartownisia" />
+                                <p className={`f-text--desktop text ${styles.text_zartownis}`}>He, he, albo do tej PIN-up girl…</p>
                             </div>
-                        </Fade>
+                        </div>
+
                     </div>
+
                 </div>
             </Sensor>
         )

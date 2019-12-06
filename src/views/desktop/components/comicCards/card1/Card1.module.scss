@@ -8,6 +8,7 @@
 .kierownik {
     top: 102px;
     right: 14px;
+    transform: translateX(-500px);
 
     .cloud_kierownik {
         width: 311px;
@@ -41,6 +42,7 @@
 .zartownis {
     top: 322px;
     left: 48px;
+    transform: translateX(-500px);
 
     .cloud_zartownis {
         width: 172px;
@@ -60,6 +62,7 @@
 .marzycielka {
     top: 465px;
     right: 304px;
+    transform: translateX(-500px);
 
     .cloud_marzycielka {
         width: 184px;

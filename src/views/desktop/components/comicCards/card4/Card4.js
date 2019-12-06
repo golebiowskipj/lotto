@@ -2,8 +2,7 @@ import React, { Component } from 'react'
 import styles from './Card4.module.scss';
 import '../CommonComicCard.scss';
 import Sensor from 'react-visibility-sensor';
-import Fade from 'react-reveal/Fade';
-import { slide, fade } from '../../../../../services/animationVariables/AnimationVariables';
+import {showCloud} from '../../../../../services/animationService/AnimationService';
 
 import bg from "./images/card4bg.jpg"
 import cloud1 from "./images/card4cloud1.svg";
@@ -34,46 +33,44 @@ export class Card4 extends Component {
                 <div style={{ height: 671 }} className={`gradientBorder`}>
                     <div className={`card ${styles.card}`}>
                         <img className={`card__background`} style={{ height: 671 - 6 }} src={bg} alt="tło karty" />
-                        <Fade right when={this.state.isVisible} delay={0} duration={slide}>
-                            <div className={`actor actor__zartownis ${styles.zartownis}`}>
+                      
+                            <div onTransitionEnd={(e)=>showCloud(e, '.js-card4-actor2')} style={{transform: this.state.isVisible ? 'none' : 'translateX(500px)'}} className={`actor actor__zartownis ${styles.zartownis}`}>
                                 <img className={``} src={zartownis} alt="zartownis" />
-                                <Fade when={this.state.isVisbile} delay={slide} duration={fade}>
-                                    <div className={`cloud ${styles.cloud_zartownis}`}>
+                             
+                                    <div className={`js-cloud cloud ${styles.cloud_zartownis}`}>
                                         <img src={cloud1} alt="dymek zartownisia" />
                                         <p className={`f-text--desktop text ${styles.text_zartownis}`}>To może jeszcze numer konta mam podać?</p>
                                     </div>
-                                </Fade>
+                             
                             </div>
-                        </Fade>
-                        <Fade left when={this.state.isVisible} delay={slide + fade} duration={slide}>
-                            <div className={`actor actor__kierownik slideFromSide ${styles.kierownik}`}>
+                      
+                            <div onTransitionEnd={e=>showCloud(e, '.js-card4-actor3')} className={`js-card4-actor2 actor actor__kierownik slideFromSide ${styles.kierownik}`}>
                                 <img src={kierownik} alt="kierownik" />
-                                <Fade when={this.state.isVisbile} delay={slide + fade + slide} duration={fade}>
-                                    <div className={`cloud ${styles.cloud_kierownik}`}>
+                              
+                                    <div className={`js-cloud cloud ${styles.cloud_kierownik}`}>
                                         <img src={cloud2} alt="dymek kierownika" />
                                         <p className={`f-text--desktop text ${styles.text_kierownik}`}>Dokładnie tak ☺</p>
                                     </div>
-                                </Fade>
-                                <Fade when={this.state.isVisbile} delay={slide + fade + slide + fade + slide + fade + fade} duration={fade}>
-                                    <div className={`cloud ${styles.cloud_kierownik2}`}>
+                             
+                                    <div className={`js-card4-cloud2 cloud ${styles.cloud_kierownik2}`}>
                                         <img src={cloud4} alt="dymek kierownika" />
                                         <p className={`f-text--desktop text ${styles.text_kierownik}`}>To też. I jeszcze tak nas zobowiązuje ustawa o przeciwdziałaniu praniu pieniędzy i finansowaniu terroryzmu.</p>
                                     </div>
-                                </Fade>
+                               
                             </div>
-                        </Fade>
+                        
 
-                        <Fade right when={this.state.isVisible} delay={slide + fade + slide + fade} duration={slide}>
-                            <div className={`actor actor__marzycielka ${styles.marzycielka}`}>
+                      
+                            <div onTransitionEnd={e=>showCloud(e, '', '.js-card4-cloud2')} className={`js-card4-actor3 actor actor__marzycielka ${styles.marzycielka}`}>
                                 <img className={``} src={marzycielka} alt="marzycielka" />
-                                <Fade when={this.state.isVisbile} delay={slide + fade + slide + fade + slide} duration={fade}>
-                                    <div className={`cloud fadeIn ${styles.cloud_marzycielka}`}>
+                               
+                                    <div className={`js-cloud cloud fadeIn ${styles.cloud_marzycielka}`}>
                                         <img src={cloud3} alt="dymek marzycielki" />
                                         <p className={`f-text--desktop text ${styles.text_marzycielka}`}>Ach… bo na to konto prześlecie środki z wygranej…</p>
                                     </div>
-                                </Fade>
+                               
                             </div>
-                        </Fade>
+                       
                     </div>
                 </div>
             </Sensor>

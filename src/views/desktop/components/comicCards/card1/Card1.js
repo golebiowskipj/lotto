@@ -2,8 +2,6 @@ import React, { Component } from 'react'
 import styles from './Card1.module.scss';
 import '../CommonComicCard.scss';
 import Sensor from 'react-visibility-sensor';
-import Fade from 'react-reveal/Fade';
-import { slide, fade } from '../../../../../services/animationVariables/AnimationVariables';
 
 import bg from "./images/card1bg.jpg"
 import cloud1 from "./images/card1cloud1.svg";
@@ -20,8 +18,42 @@ export class Card1 extends Component {
         isVisible: false,
     }
 
+    showActor1Cloud1 = (e) => {
+        const cloud = e.target.querySelector('.js-cloud');
+
+        if (cloud !== null) {
+            cloud.addEventListener('transitionend', () => {
+                document.querySelector('.js-actor2').style.transform = 'none';
+            })
+            cloud.style.opacity = 1;
+        }
+    }
+
+    showActor2Cloud1 = (e) => {
+        const cloud = e.target.querySelector('.js-cloud');
+
+        if (cloud !== null) {
+            cloud.addEventListener('transitionend', () => {
+                document.querySelector('.js-actor3').style.transform = 'none';
+            })
+            cloud.style.opacity = 1;
+        }
+    }
+
+    showActor1Cloud2 = (e) => {
+        const cloud = e.target.querySelector('.js-cloud');
+
+        if (cloud !== null) {
+            cloud.addEventListener('transitionend', () => {
+                document.querySelector('.js-cloud2').style.opacity = 1;
+            });
+            cloud.style.opacity = 1;
+        }
+
+    }
+
     onChange = (isVisible) => {
-        this.setState({ isVisible: isVisible});
+        this.setState({ isVisible: isVisible });
     }
     render() {
         return (
@@ -33,45 +65,32 @@ export class Card1 extends Component {
                 <div style={{ height: 671 }} className={`gradientBorder`}>
                     <div className={`card ${styles.card}`}>
                         <img className={`card__background`} style={{ height: 671 - 6 }} src={bg} alt="tło karty" />
-                        <Fade right when={this.state.isVisible} duration={slide} appear={true}>
-                            <div className={`actor actor__kierownik slideFromSide ${styles.kierownik}`}>
-                                <img src={kierownik} alt="kierownik" />
-                                <Fade when={this.state.isVisbile} delay={slide} duration={fade}>
-                                    <div className={`cloud ${styles.cloud_kierownik}`}>
-                                        <img src={cloud1} alt="dymek kierownika" />
-                                        <p className={`f-text--desktop text ${styles.text_kierownik}`}>Za chwilę wejdziemy do świata kul… kultowych gier LOTTO.</p>
-                                    </div>
-                                </Fade>
-                                <Fade when={this.state.isVisbile} delay={slide + fade + slide + fade + slide + fade + fade} duration={fade}>
-                                    <div className={`cloud ${styles.cloud_kierownik2}`}>
-                                        <img src={cloud4} alt="dymek kierownika" />
-                                        <p className={`f-text--desktop text ${styles.text_kierownik}`}>Zarejestrujmy się i zakręćmy po kody promocyjne!</p>
-                                    </div>
-                                </Fade>
+                        <div onTransitionEnd={this.showActor1Cloud1} style={{ transform: this.state.isVisible ? 'none' : 'translateX(500px)' }} className={`actor actor__kierownik slideFromSide ${styles.kierownik}`}>
+                            <img src={kierownik} alt="kierownik" />
+                            <div className={`js-cloud cloud ${styles.cloud_kierownik}`}>
+                                <img src={cloud1} alt="dymek kierownika" />
+                                <p className={`f-text--desktop text ${styles.text_kierownik}`}>Za chwilę wejdziemy do świata kul… kultowych gier LOTTO.</p>
                             </div>
-                        </Fade>
-                        <Fade left when={this.state.isVisible} delay={slide + fade} duration={slide}>
-                            <div className={`actor actor__zartownis ${styles.zartownis}`}>
-                                <img className={``} src={zartownis} alt="zartownis" />
-                                <Fade when={this.state.isVisbile} delay={slide + fade + slide} duration={fade}>
-                                    <div className={`cloud ${styles.cloud_zartownis}`}>
-                                        <img src={cloud2} alt="dymek zartownisia" />
-                                        <p className={`f-text--desktop text ${styles.text_zartownis}`}>I to mnie kręci!</p>
-                                    </div>
-                                </Fade>
+                            <div className={`js-cloud2 cloud ${styles.cloud_kierownik2}`}>
+                                <img src={cloud4} alt="dymek kierownika" />
+                                <p className={`f-text--desktop text ${styles.text_kierownik}`}>Zarejestrujmy się i zakręćmy po kody promocyjne!</p>
                             </div>
-                        </Fade>
-                        <Fade right when={this.state.isVisible} delay={slide + fade + slide + fade} duration={slide}>
-                            <div className={`actor actor__marzycielka ${styles.marzycielka}`}>
-                                <img className={``} src={marzycielka} alt="marzycielka" />
-                                <Fade when={this.state.isVisbile} delay={slide + fade + slide + fade + slide} duration={fade}>
-                                    <div className={`cloud fadeIn ${styles.cloud_marzycielka}`}>
-                                        <img src={cloud3} alt="dymek marzycielki" />
-                                        <p className={`f-text--desktop text ${styles.text_marzycielka}`}>A mnie rozmarza…</p>
-                                    </div>
-                                </Fade>
+                        </div>
+                        <div onTransitionEnd={this.showActor2Cloud1} className={`js-actor2 actor actor__zartownis ${styles.zartownis}`}>
+                            <img className={``} src={zartownis} alt="zartownis" />
+                            <div className={`js-cloud cloud ${styles.cloud_zartownis}`}>
+                                <img src={cloud2} alt="dymek zartownisia" />
+                                <p className={`f-text--desktop text ${styles.text_zartownis}`}>I to mnie kręci!</p>
                             </div>
-                        </Fade>
+                        </div>
+                        <div onTransitionEnd={this.showActor1Cloud2} className={`js-actor3 actor actor__marzycielka ${styles.marzycielka}`}>
+                            <img className={``} src={marzycielka} alt="marzycielka" />
+
+                            <div className={`js-cloud cloud fadeIn ${styles.cloud_marzycielka}`}>
+                                <img src={cloud3} alt="dymek marzycielki" />
+                                <p className={`f-text--desktop text ${styles.text_marzycielka}`}>A mnie rozmarza…</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </Sensor>

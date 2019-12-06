@@ -7,6 +7,8 @@
 .kierownik {
     top: 126px;
     right: 39px;
+    transform: translateX(500px);
+    transition: transform .6s ease-out;
 
     .cloud_kierownik {
         width: 308px;
@@ -26,6 +28,8 @@
 .zartownis {
     top: 418px;
     left: 299px;
+    transform: translateX(500px);
+    transition: transform .6s ease-out;
 
     .cloud_zartownis {
         width: 172px;
@@ -45,6 +49,8 @@
 .marzycielka {
     top: 302px;
     right: 372px;
+    transform: translateX(-500px);
+    transition: transform .6s ease-out;
 
     .cloud_marzycielka {
         width: 339px;
