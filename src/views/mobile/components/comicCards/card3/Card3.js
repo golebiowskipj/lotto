@@ -5,7 +5,6 @@ import '../CommonComicCardM.scss';
 import { showCloud } from '../../../../../services/animationService/AnimationService';
 
 import kierownik from '../../../images/kierownik.svg';
-import marzycielka from '../../../images/marzycielka.svg';
 import zartownis from '../../../images/zartownis.svg';
 import bg from "./images/card3bgm.jpg"
 import cloud1 from "./images/card3cloud1m.svg";

@@ -12,7 +12,7 @@ import arrow from '../../images/arrow.svg';
 export class MainM extends Component {
     state = {
         x0: 0,
-        stage: 6,
+        stage: 1,
         height: window.innerHeight,
     }
 
@@ -58,6 +58,8 @@ export class MainM extends Component {
                 return <Card5 height={this.state.height} />
             case 6:
                 return <Card6 height={this.state.height} />
+            default: 
+                return <Card1 height={this.state.height} />
         }
     }
 
