@@ -28,7 +28,8 @@ export class Card4 extends Component {
             <Sensor
                 active={!this.state.isVisible}
                 onChange={this.onChange}
-                minTopValue={400}
+                partialVisibility={true}
+                offset={{bottom: window.innerHeight/2}}
                 resizeCheck={true}>
                 <div style={{ height: 671 }} className={`gradientBorder`}>
                     <div className={`card ${styles.card}`}>

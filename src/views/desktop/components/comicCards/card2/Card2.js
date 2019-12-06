@@ -22,24 +22,13 @@ export class Card2 extends Component {
         this.setState({ isVisible: isVisible });
     }
 
-    // showCloud = (e, nextActorQuery) => {
-    //     const cloud = e.target.querySelector('.js-cloud');
-
-    //     if (cloud !== null) {
-    //         if (nextActorQuery !== '') {
-    //             cloud.addEventListener('transitionend', () => {
-    //                 document.querySelector(nextActorQuery).style.transform = 'none';
-    //             })
-    //         }
-    //         cloud.style.opacity = 1;
-    //     }
-    // }
     render() {
         return (
             <Sensor
                 active={!this.state.isVisible}
                 onChange={this.onChange}
-                minTopValue={400}
+                partialVisibility={true}
+                offset={{bottom: window.innerHeight/2}}
                 resizeCheck={true}>
 
                 <div style={{ height: 671 }} className={`gradientBorder`}>
