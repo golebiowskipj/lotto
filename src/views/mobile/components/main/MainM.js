@@ -83,16 +83,16 @@ export class MainM extends Component {
 
     render() {
         return (
-            <main className={this.state.stage < 6 ? styles.mobileGrid : styles.mobileGrid__last}>
+            <main style={{maxHeight: `${this.state.height}px`}} className={this.state.stage < 6 ? styles.mobileGrid : styles.mobileGrid__last}>
                 {this.state.stage < 6
                     ?
                     <>
-                        <div className={styles.screen} onTouchStart={this.touchStart} onTouchEnd={this.touchEnd}>
+                        <div style={{maxHeight: `${this.state.height}px`}} className={styles.screen} onTouchStart={this.touchStart} onTouchEnd={this.touchEnd}>
                             {
                                 this.displayStage(this.state.stage)
                             }
                         </div>
-                        <div className={styles.nextButton}>
+                        <div style={{maxHeight: `${this.state.height}px`}} className={styles.nextButton}>
                             <button onClick={this.nextStage} type="button">
                                 <img src={arrow} alt="następny" />
                             </button>
@@ -100,12 +100,12 @@ export class MainM extends Component {
                     </>
                     :
                     <>
-                        <div className={styles.nextButton}>
+                        <div style={{maxHeight: `${this.state.height}px`}} className={styles.nextButton}>
                             <button onClick={this.prevStageBtn} type="button">
                                 <img style={{ transform: 'rotate(180deg)' }} src={arrow} alt="na początek" />
                             </button>
                         </div>
-                        <div className={styles.screen} onTouchStart={this.touchStart} onTouchEnd={this.touchEnd}>
+                        <div style={{maxHeight: `${this.state.height}px`}} className={styles.screen} onTouchStart={this.touchStart} onTouchEnd={this.touchEnd}>
                             {
                                 this.displayStage(this.state.stage)
                             }

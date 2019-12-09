@@ -8,12 +8,14 @@
         height: 100vh;
         height: $calculated-height;
         overflow: hidden;
+        max-height: 100vh;
     }
 
     .heightWrapper > main {
         margin-top: 49px;
         // padding-top: calc(#{$header-height} - 10px);
         height: calc(#{$calculated-height} - #{$header-height} - #{$footer-height});
+        max-height: 100vh;
     }
 
     .heightWrapper > footer, .scrollWrapper > header {
